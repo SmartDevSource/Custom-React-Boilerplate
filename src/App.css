@@ -28,8 +28,17 @@
 
 .navbar { background-color: rgb(160, 160, 160); }
 
-.navlink {transition:.3s; font-size: 18px; text-decoration: none; padding: 20px; font-weight: bold; color:rgb(47, 47, 47); }
+.navlink {transition:.3s; font-size: 18px; text-decoration: none; padding: 20px; font-weight: bold; color:rgb(68, 68, 68); }
 .navlink:hover { transition:.3s; color: white; background-color: rgb(84, 84, 84); }
+
+.dark-theme{ background-color: rgb(87, 87, 87); }
+.dark-theme * {
+  color :rgb(235, 235, 235);
+}
+
+.dark-theme .navbar a {
+  color:rgb(68, 68, 68);
+}
 
 .footer{
   text-align: center;
@@ -41,4 +50,12 @@
   width: 100%;
   padding: 10px 0;
   color:rgb(47, 47, 47);
+}
+
+.toggler{
+  margin-left: auto;
+  margin-right: 30px;
+  padding: 10px;
+  font-size: 36px;
+  cursor: pointer;
 }

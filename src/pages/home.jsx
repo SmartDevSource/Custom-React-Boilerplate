@@ -43,6 +43,8 @@ const Home = () =>{
         author: user.username
       }}
 
+      console.log(user.username);
+
       const response = await fetch('http://localhost:3000/articles', {
         method:'post',
         headers: {'Content-Type': 'application/json'},
@@ -61,7 +63,6 @@ const Home = () =>{
 
   const handleDeletePost = async (id)=>{
     try{
-
       const response = await fetch(`http://localhost:3000/articles/${id}`, {
         method:'delete',
         headers: {'Content-Type': 'application/json'},

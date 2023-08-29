@@ -28,10 +28,9 @@ const SignIn = ({setSuccessLogin}) =>{
     };
 
     loginAccount(data).then(response=>{
-      const token = response.headers.get("Authorization").split(" ")[1];
 
       if (response.ok){
-        console.log(response);
+        const token = response.headers.get("Authorization").split(" ")[1];
         setUser({username: email, isLogged: true, token: token});
         setLogin(true);
         setSuccessLogin(true);

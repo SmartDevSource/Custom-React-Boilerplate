@@ -4,6 +4,7 @@
 }
 
 .m5 { margin: 5px !important; }
+.m10 { margin: 10px !important; }
 .mt30 { margin-top: 30 !important; }
 
 .red { color:red; }
@@ -40,6 +41,11 @@
   background: #555; 
 }
 
+.article{
+  text-align: center;
+  margin: 20px !important;
+}
+
 .flexcol { display: flex; justify-content: center; align-items: center; flex-direction: column; }
 .flexrow { display: flex; justify-content: center; align-items: center; flex-direction: row; }
 
@@ -53,8 +59,8 @@
   color :rgb(235, 235, 235);
 }
 
-.dark-theme .navbar a {
-  color:rgb(68, 68, 68);
+.dark-theme * {
+  color:rgb(0, 0, 0) !important;
 }
 
 .footer{

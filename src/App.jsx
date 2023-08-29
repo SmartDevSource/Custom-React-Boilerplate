@@ -129,8 +129,9 @@ function App() {
     const userData = JSON.parse(userCookie);
 
     if (userData!=null){
+      console.log(userData);
       setIsLogged(userData.isLogged);
-      console.log(isLogged);
+      setUser(userData);
     }
   }, [])
 

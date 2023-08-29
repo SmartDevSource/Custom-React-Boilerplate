@@ -3,8 +3,25 @@
   color:rgb(71, 71, 71);
 }
 
+.m5 { margin: 5px !important; }
+.mt30 { margin-top: 30 !important; }
+
+.red { color:red; }
+
 ::selection {
   background-color: rgb(219, 219, 219);
+}
+
+.pop{
+  display: inline-block;
+  margin-top: 5px;
+  background-color: rgb(63, 221, 0);
+  color:rgb(34, 34, 34);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +70,9 @@
 }
 
 .toggler{
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-right: 30px;
   padding: 10px;
   font-size: 36px;

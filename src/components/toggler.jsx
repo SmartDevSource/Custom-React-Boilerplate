@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const Toggler = ({isDarkTheme, toggleTheme}) =>{
   
   return (
-    <FontAwesomeIcon className='toggler' icon={isDarkTheme ? regularLightbulb : solidLightbulb} bounce onClick={toggleTheme}/>
+    <FontAwesomeIcon className='toggler' icon={isDarkTheme ? regularLightbulb : solidLightbulb} onClick={toggleTheme}/>
   )
 
 }
